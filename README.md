@@ -2,13 +2,13 @@
 To use the atom config files, move them into the ~/.atom directory.
 
 ### SHELL SCRIPTS ###
-To use the shell scripts, first change the permission:
+To use the shell scripts, first change the permission:  
 `$ chmod +x <path-to-script.sh>`
 
-The dollar sign represents the command prompt. Run the script:
+The dollar sign represents the command prompt. Run the script:  
 `$ ./<path-to-script.sh>`
 
-You can also set up an alias in your bash profile:
+You can also set up an alias in your bash profile:  
 `$ alias <name-of-command>="./<path-to-script.sh>"`
 
 ### DROPBOX ###
