@@ -5,32 +5,35 @@
 #
 . ./colors.sh
 
-echo $PINK
-echo 'a'
-echo $BLUE
-echo 'a'
-echo $GREEN
-echo 'a'
-echo $RED
-echo 'a'
-echo $YELLOW
-echo 'a'
-echo $END
-
-echo "World Time"
+echo "${BLUE}World Time${END}"
 
 # TZONES refers to system time zones,
 # displayed with the names in TZONE_NAMES.
 # The corresponding cities in TZONES and TZONE_NAMES
-# should have the same time zone.
-# See /usr/share/zoneinfo/ for more names.
+# should be in the same time zone.
+# See /usr/share/zoneinfo/ for a list of all
+# system time zones.
+
+# BEWARE: Terminal will not warn you if you misspell
+# a system time zone or name one that does not exist.
+# It will silently return the time in UTC.
 TZONES=(
-  'US/Los_Angeles'
-  'US/Chicago'
+  "America/Los_Angeles"
+  "America/Chicago"
+  "America/New_York"
+  "Europe/London"
+  "Africa/Nairobi"
+  "Asia/Kolkata"
+  "Asia/Hong_Kong"
 )
 TZONE_NAMES=(
-  'Seattle'
-  'Austin'
+  "Seattle"  # Corresponds to Los Angeles time zone
+  "Austin"
+  "Chapel Hill"
+  "London"
+  "Nairobi"
+  "Mumbai"
+  "Hong Kong"
 )
 
 # Show the time from the specified input time zone in the specified output
@@ -38,6 +41,6 @@ TZONE_NAMES=(
 for (( i=0; i<${#TZONES[@]}; i++ )); do
   TZONE=${TZONES[$i]}
   TZONE_NAME=${TZONE_NAMES[$i]}
-  TZONE_DATE=`TZ=$TZONE date`
-  echo "$TZONE_NAME: $TZONE_DATE"
+  TZONE_DATE=$(TZ=$TZONE date)
+  echo "${RED}${TZONE_NAME}:${END} ${TZONE_DATE}"
 done
