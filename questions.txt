@@ -3,6 +3,7 @@ What about arbitrary times?
 Do you prefer 12-hour or 24-hour time?
 Do you want the places/times to be highlighted?
 What aspects of weather do you want to know?
+  - Temperature (low/high) of today and tomorrow, precipitation chance
 Do you need the font to be changed in the command?
 Would you like for the border of the parentheses to be highlighted or the parentheses themselves to be highlighted?
 Do you want resizing for all terminal applications?

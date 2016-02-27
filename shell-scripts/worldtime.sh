@@ -3,9 +3,21 @@
 # Print the current time in specified time zones.
 # Helpful link: http://unix.stackexchange.com/questions/48101/how-can-i-have-date-output-the-time-from-a-different-timezone
 #
+. ./colors.sh
 
+echo $PINK
+echo 'a'
+echo $BLUE
+echo 'a'
+echo $GREEN
+echo 'a'
+echo $RED
+echo 'a'
+echo $YELLOW
+echo 'a'
+echo $END
 
-echo "\033[91mWorld Time"
+echo "World Time"
 
 # TZONES refers to system time zones,
 # displayed with the names in TZONE_NAMES.
