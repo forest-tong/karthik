@@ -6,9 +6,9 @@ import sys
 import json
 
 def main(argv):
-    print "hey"
     location_json = argv[1]
-    location_dict = json.loads(location_json)
+    # location_dict = json.loads(location_json)
+    print location_json
     # CITY = location_dict["city"]
     # COUNTRY = location_dict["country"]
     # print "Weather For: " + CITY + ", " + COUNTRY

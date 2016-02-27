@@ -12,8 +12,6 @@ location=$(curl http://ip-api.com/json)
 
 echo $location | python ../weather/weather.py $location
 
-# echo ${location["city"]}
-
 # weather=$(curl api.openweathermap.org/data/2.5/forecast/city?id=CITY_ID&APPID=$OWM_API_KEY)
 
 # echo $weather | python -mjson.tool
