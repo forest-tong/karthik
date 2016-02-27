@@ -8,18 +8,14 @@ The Dropbox access token must reside in ./ACCESS_TOKEN.
 import dropbox
 import sys
 
-print sys.executable
+def main(argv):
+  with open('./ACCESS_TOKEN') as f:
+    access_token = f.readline()
+  dbx = dropbox.Dropbox(access_token[:-1])  # Strip newline
 
-# def main(argv):
-with open('./ACCESS_TOKEN') as f:
-  access_token = f.readline()
-dbx = dropbox.Dropbox(access_token)
-print access_token
+  file_path = argv[1]
+  shared_link = dbx.sharing_create_shared_link("/" + file_path, True)
+  print shared_link.url
 
-# file_path = argv[1]
-file_path = 'foo'
-print "/" + file_path
-print dbx.sharing_create_shared_link("/" + file_path)    
-
-# if __name__ == '__main__':
-#   main(sys.argv)
+if __name__ == '__main__':
+  main(sys.argv)
