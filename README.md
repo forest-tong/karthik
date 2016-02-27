@@ -20,5 +20,5 @@ You can also set up an alias in your bash profile:
 6. Place your Dropbox folder path in dropbox/DROPBOX_PATH.
 7. Follow the steps under section "Shell Scripts" for running sharelink.sh. This shell script requires one argument, the file path to the Dropbox file. It can be either the full path:  
 `$ ./sharelink.sh "<path-to-dropbox-folder>/<relative-path-to-file>"`  
-or the relative path from the Dropbox folder:
+or the relative path from the Dropbox folder:  
 `$ ./sharelink.sh "<relative-path-to-file>#`.
