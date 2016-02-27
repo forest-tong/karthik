@@ -8,8 +8,8 @@ MAPZEN_API_KEY="search-dFaf7AM"
 CITY_ID=524901
 
 location=$(curl http://ip-api.com/json)
-# echo $location | python -mjson.tool
-echo ${location["city"]}
+echo $location | python -mjson.tool
+# echo ${location["city"]}
 
 # weather=$(curl api.openweathermap.org/data/2.5/forecast/city?id=CITY_ID&APPID=$OWM_API_KEY)
 
