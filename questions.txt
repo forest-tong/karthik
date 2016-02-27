@@ -1,1 +1,2 @@
 Do you just want to convert other time zones to your time zone, or the other way around as well?
+Do you prefer 12-hour or 24-hour time?
