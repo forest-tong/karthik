@@ -1,0 +1,139 @@
+### ATOM text editor tweaks ###
+
+(portable atom with config files)
+
+*** black background (DONE), white text (DONE), large blinking cursor (DONE), 40Pt font(DONE) yellow highlights, red matching parenthesis/bracket/brace --
+
+### OS X Terminal Tweaks ###
+
+Fill up the terminal screen with the largest font you can (40pt or bigger) without distorting:
+
+*** SYSTEM VITALS
+
+System status monitor that includes only battery status, network status of wifi disconnected, connecting, connected (connectivity (Up/down speeds)), most memory/CPU intensive processes with usage details (perhaps from top/htop?)
+
+*** WORLD TIME CLOCK / EXCHANGE RATES
+
+Terminal command: "worldtime"
+
+Magnify list of current time up to point of distortion:
+
+Seattle, WA
+Austin, TX
+Chapel Hill, NC
+London
+Nairobi
+Mumbai
+Hong Kong
+
+Terminal command: "exchangerate"
+
+Exchange rate (to USD)
+
+UK Pound
+Euro
+Indian Rupee
+Kenyan Shilling
+Tanzanian Shilling
+Hong Kong Dollar
+Canadian Dollar
+
+*** WEATHER
+
+Terminal command: "weather"
+
+Magnify list of current time up to point of distortion:
+
+Chapel Hill, NC
+Washington DC
+Boston, MA
+
+*** TIMER
+
+Terminal command: "timer"
+
+Countdown timer magnified to point prior to distortion
+
+*** DROPBOX
+
+terminal command: "dboxlink"
+
+Command to create public dropbox link from file, shorten with bit.ly, copy to clipboard
+
+### Android tweaks ###
+
+"Talkback lite" -- swipe down to read text on screen, a la "speak screen" on iOS 8+
+
+### Emacs/emacspeak tweaks ###
+
+1) Start with speech rate = 400. Right now, I manually do C-u C-e d r 400. I tried editing the speech rate in the lisp file, but it's not picking it up for some reason
+
+*DONE* 2) Start with window maximized, but not in full screen mode. I was able to get the height right, but the width is too lond and I can't figure out how to change this.
+
+*DONE* 3) Start with font at ~40 point. I figured out how to change the background to black and the color to white, but haven't figured out the fond. Also, would love to change the font to "fixed width".
+
+4) gnus: gmail tweaks so that it mirrors gmail web interface -- start with Inbox opened, conversation view, sort so top message is most recent, bold unread messages, have only headers: date, from, subject, message size, replied/forwarded flag in that order.
+
+sampele line in message view:
+
+17-Feb James M(22) Subjectis A4
+Date/From(with convo count)/Subject/AttachmentFlag/PriorityInboxGlag
+Characters:6+1 + 7+4+1 + 9+1 +2
+
+Want to mirror gmail: most recent at top, start with inbox folder open
+
+5) Set up gmail offline, so I have a copy of messages in my inbox locally
+
+6) Set up google calendar with org-mode (or use calfw -- can't figure out how to install properly)
+-Create custom lists of events based on tags (or words in event name). For example: Travel tag:
+
+Jan 20 2016 BOS - RDU
+Mar 20 2016 RDU - SEA
+Jun 20 2016 BOS - AKL
+
+or Birthdays tag:
+
+Jan 20 2016 John Smith
+Mar 20 2016 Jack Black
+Jun 20 2016 George Mason
+
+0) DYNAMIC RE-SIZING
+
+When viewing anything, automatically resize output of command to minimize wrapping (maximum magnification without distortion)
+
+1) CALENDARING
+
+Viewing my calendar:
+-Read from google calendar
+-Display in largest possible font without wrapping
+-Audible reminders X minutes before (that can be toggled off)
+-View details of specific calendar item (notes)
+
+Editing my calendar:
+-Add and delete events (pass these as arguments to Google Calendar "quick add")
+-Add notes to specific calendar item
+
+View monthly (dates/days of week only):
+
+Put 1 or 2 months of calendar on screen with cal function, but modified to magnify up to point before distortion
+
+4) CONNECTING TO WI-FI
+
+Airport -I command output magnified to point prior to distortion to only show unlocked networks, previously connected networks
+
+Connecting to new network: command for tab completion of available networks and take password (if needed) as argument
+
+9) Google voice in terminal
+
+-SMS and voice dialing from terminal
+
+10) Google hangouts/Skype from terminal
+
+-For video conference calling via terminal
+
+X) MISC
+
+Spreadsheet client to view csv magnified on terminal
+Tagging/searching txt files
+Magnified GNU chess
+Connecting to VPN
