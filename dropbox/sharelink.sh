@@ -2,8 +2,6 @@
 # Copies the shortened Dropbox link to the clipboard
 # if the file can be found, prints out an error otherwise.
 
-. ../shell-scripts/colors.sh
-
 link=$(python link-sharing.py "$1" 2> /dev/null)  # Throw away error output
 if [[ $link = '' ]]
 then
@@ -11,6 +9,6 @@ then
   echo "Make sure to specify the correct file path."
   echo "If the file name contains spaces, surround it with quotes."
 else
-  echo "Link ${PINK}$link${END} copied to clipboard."
+  echo "Link $link copied to clipboard."
   echo $link | pbcopy
 fi
