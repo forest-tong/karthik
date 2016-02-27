@@ -10,13 +10,4 @@ fi
 
 exchange_rates=$(curl http://api.fixer.io/latest?base=$BASE_CURRENCY)
 
-# echo "Raw Data"
-echo "$exchange_rate: $exchange_rates"
-
-# echo "Raw Rates"
-# echo "$exchange_rate: ${exchange_rates["rates"]}"
-
-# for exchange_rate in ${exchange_rates["rates"]}
-# do
-#     echo "$exchange_rate: ${exchange_rates["rates"]}"
-# done
+echo $exchange_rates | python -mjson.tool
