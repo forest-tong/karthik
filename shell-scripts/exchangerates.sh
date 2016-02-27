@@ -12,4 +12,4 @@ exchange_rates=$(curl http://api.fixer.io/latest?base=$BASE_CURRENCY)
 
 # echo $exchange_rates | python -mjson.tool
 
-echo $exchange_rates | python ../exchangerates/exchangerates.py $exchange_rates $BASE_CURRENCY
+echo $exchange_rates | python ../exchangerates/exchangerates.py $exchange_rates
