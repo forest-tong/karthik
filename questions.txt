@@ -1,2 +1,4 @@
 Do you just want to convert other time zones to your time zone, or the other way around as well?
 Do you prefer 12-hour or 24-hour time?
+What aspects of weather do you want to know?
+Do you need the font to be changed in the command?
