@@ -1,4 +1,8 @@
 BASE_DIR=$(dirname $0)
-cal $1 > $BASE_DIR/cal_output
-python $BASE_DIR/split-calendar.py | less
-rm $BASE_DIR/cal_output
+PYTHON_DIR=$BASE_DIR/../python
+
+# Output reformatted calendar to less
+echo $PYTHON_DIR
+cal $1 > $PYTHON_DIR/cal_output
+python $PYTHON_DIR/split-calendar.py | less
+rm $PYTHON_DIR/cal_output
