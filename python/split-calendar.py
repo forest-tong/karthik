@@ -2,6 +2,7 @@
 Splits the output of 'cal _' shell command
 so that different months don't occur on the same lines.
 '''
+import os
 import sys
 
 MONTH_ROWS = 4  # Number of rows of months
@@ -11,7 +12,7 @@ MONTH_HEIGHT = 8  # Number of characters a month is tall
 VSPACES = 2  # Number of spaces vertically separating months
 LINE_LENGTH = MONTH_COLS*(MONTH_WIDTH + VSPACES) - 1
 
-FILE_PATH='./cal_output'
+FILE_PATH = os.path.join(os.path.dirname(__file__), 'cal_output')
 
 def preprocess(lines):
   for i in xrange(len(lines)):
