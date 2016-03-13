@@ -1,6 +1,7 @@
 #!/bin/bash
 
-ER_APP_KEY="cf0ad5c218dd0305a49cf71818488390"
+# Please insert app key here
+ER_APP_KEY=""
 
 BASE_CURRENCY=""
 
@@ -21,7 +22,7 @@ fi
 
 # exchange_rates=$(curl http://api.fixer.io/latest?base=$BASE_CURRENCY)
 
-exchange_rates=$(curl "http://apilayer.net/api/live?access_key=cf0ad5c218dd0305a49cf71818488390&currencies=CAD,EUR,GBP,HKD,INR,KES,TZS"&format=1)
+exchange_rates=$(curl "http://apilayer.net/api/live?access_key=$ER_APP_KEY&currencies=CAD,EUR,GBP,HKD,INR,KES,TZS"&format=1)
 
 # echo $exchange_rates | python -mjson.tool
 
