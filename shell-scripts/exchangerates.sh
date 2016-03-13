@@ -25,4 +25,4 @@ exchange_rates=$(curl "http://apilayer.net/api/live?access_key=cf0ad5c218dd0305a
 
 # echo $exchange_rates | python -mjson.tool
 
-echo $exchange_rates | python ../exchangerates/exchangerates.py $exchange_rates
+echo $exchange_rates | python ../python/exchangerates.py $exchange_rates
